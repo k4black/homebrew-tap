@@ -1,25 +1,25 @@
 class HexCli < Formula
   desc "hex: a thin, deterministic control plane that runs agent CLIs (Claude Code, Codex, Pi, opencode) over a bounded, journaled graph"
   homepage "https://github.com/k4black/hex"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/k4black/hex/releases/download/v0.1.1/hex-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "96f2eb12978cccef1636d56a79bbee0e65be676961b4e58c8e0f298d2e60132c"
+      url "https://github.com/k4black/hex/releases/download/v0.1.2/hex-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "c31af89cc4299cb9b39168cf53cd6794c6914fa57dd232ef898d23a8fe3f9458"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k4black/hex/releases/download/v0.1.1/hex-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "3b49949310c899b995fc811d790f78680786d2dc91cbacffd4ca479db1cfc9e2"
+      url "https://github.com/k4black/hex/releases/download/v0.1.2/hex-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "a0fd3a90496d3f1854fec0bcab45d0f0469eb5b2ce5894a9be6646f7641fcbf1"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/k4black/hex/releases/download/v0.1.1/hex-cli-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "e0c4031d0f0b45323533cb62681437c4490234385f37ce25d6751fad9c243df3"
+      url "https://github.com/k4black/hex/releases/download/v0.1.2/hex-cli-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "0623a0860ea253c88628dd1be34e479aa83281d344e888c2fbcc18431f70ef80"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k4black/hex/releases/download/v0.1.1/hex-cli-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "976e34820fd967787fa131716f574b03d15f4825b340ad7d5dea3a48a46f06df"
+      url "https://github.com/k4black/hex/releases/download/v0.1.2/hex-cli-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "256e3eb70c0435e9896a0396867c7572bb94b4c7913e541c33af682667bf4b4a"
     end
   end
   license "MIT"
